@@ -9,7 +9,8 @@ class Human:
         self.name = name
         self.age = age
 
-    def __repr__(self) -> str:
-        pass
 
-
+object1: Human = Human(
+    name='Gustavo',
+    age=27
+)
