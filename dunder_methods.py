@@ -12,6 +12,10 @@ class Human:
     def __setattr__(self, name: str, value: Any) -> None:
         if isinstance(value, str):
             value = value.upper()
+
+        elif isinstance(value, int):
+            pass
+
         super().__setattr__(name, value)
 
     def __getattr__(self, item):
